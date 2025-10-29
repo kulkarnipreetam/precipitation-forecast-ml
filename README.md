@@ -1,6 +1,6 @@
 # 🌦️ Two-Stage Weather Forecast Pipeline  
 
-> A machine learning pipeline for forecasting **precipitation events and intensity** using open meteorological data from the <a href="https://open-meteo.com/" target="_blank">Open-Meteo API</a>..  
+> A machine learning pipeline for forecasting **precipitation events and intensity** using open meteorological data from the [Open-Meteo API](https://open-meteo.com/).  
 
 ---
 
