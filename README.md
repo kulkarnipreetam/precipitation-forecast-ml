@@ -11,8 +11,7 @@ This project builds a **two-stage machine learning pipeline** for precipitation 
 1. **Stage 1 – Classification:** Determines whether precipitation (rain, snow, sleet, etc.) will occur.  
 2. **Stage 2 – Regression:** Predicts the **precipitation intensity (mm)** when precipitation is expected.  
 
-The system uses **hourly and daily weather data** from the Open-Meteo API and can be extended to multiple cities. The workflow was prototyped using data from **Greensboro, North Carolina**.
-It forms the foundation for a cloud-integrated, continuously updating precipitation forecasting platform.
+The system uses **hourly and daily weather data** from the Open-Meteo API. While initially prototyped for Greensboro, NC, the framework supports **training dedicated models for each city** to capture local weather dynamics. It forms the foundation for a cloud-integrated, continuously updating precipitation forecasting platform.
 
 ---
 
@@ -71,7 +70,7 @@ The calibration process helped stabilize predictions, especially for smaller pre
 - **Precipitation events are relatively rare** in the dataset (occurring in less than ~15% of hourly records).  
   - This imbalance required careful tuning of model thresholds and evaluation metrics beyond raw accuracy.  
   - Metrics like **Precision, Recall, and AUC** provided a more balanced assessment of model performance.  
-- Results indicate strong generalization capability for daily and hourly forecasting tasks.
+- Results indicate strong predictive performance for the city-specific models on daily and hourly forecasting tasks.
 
 ---
 
@@ -112,7 +111,7 @@ Some variables were **engineered or derived** from the raw features to improve m
   - Probability of precipitation (Stage 1)  
   - Predicted intensity in mm (Stage 2)  
   - Historical trend charts and feature importance visualizations.  
-- The focus will remain on **precipitation forecasting**, not just rainfall, for city-agnostic accuracy.  
+- The focus will remain on **precipitation forecasting**, not just rainfall, with **dedicated models trained per city** to capture local weather dynamics more accurately.
 
 ---
 
