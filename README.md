@@ -138,7 +138,9 @@ Some variables were **engineered or derived** from the raw features to improve m
 5. Save and prepare models for automation and deployment.  
 
 ---
-
+<p align="center">
+  <strong>“Turning open weather data into actionable precipitation forecasts.”</strong> ☁️🌦️
+</p>
 
 ## Important Notice
 
